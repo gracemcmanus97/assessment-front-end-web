@@ -1,42 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Homepage</title>
-	<link href="styles.css" rel="stylesheet">
+  <head>
+    <title>Homepage</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <ol>
+        <li class="crumb"><a href="./home.html">Home</a></li>
+        <li class="crumb"><a href="./profile.html">Profile</a></li>
+        <li class="crumb"><a href="./about.html">About</a></li>
+      </ol>
+    </nav>
 
-</head>
-<body>
-	<nav>
-		<ol>
-	        <li class="crumb"><a href="./home.html">Home</a></li>
-	        <li class="crumb"><a href="./profile.html">Profile</a></li>
-	        <li class="crumb"><a href="./about.html">About</a></li>
-	    </ol>
-	</nav>
+    <content>
+      <h1>Welcome to this little website.</h1>
+      <p>Hello World!</p>
+      <p>
+        Hi there and welcome! Take a look around. Take a deep breath. Enjoy!
+      </p>
 
-	<content>
-		<h1>Welcome to this little website.</h1>
-		<!-- insert hello world here -->
+      <img
+        src="https://media.wired.com/photos/5bda3f63b8e3ca51fea010bf/191:100/pass/MandarinDuck-971545542.jpg"
+        id="Mandarin Duck"
+      />
 
-		<img src="https://devmountain.com/wp-content/uploads/2020/10/devmountain-logo3.png">
+      <p>
+        Thanks for visiting us here. We care about you! Here are some
+        compliments to make you smile a little.
+      </p>
+      <ul>
+        <li>You are thoughtful, you are brilliant.</li>
+        <li>You are clever and kind.</li>
+        <li>You have a smile that is warm like sunshine.</li>
+      </ul>
 
-		<h2>Contact Us</h2>
-		<form id="contact">
-			Your name:
-			<input type="text">
+      <h2>Contact Us</h2>
+      <form id="contact">
+        Your name:
+        <input type="text" />
 
-			Message:
-			<input type="textarea">
+        Message:
+        <input type="textarea" />
 
-			<input type="submit">
+        <input type="submit" />
 
+        How did you hear about us?:
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="Google" />
+        <label for="checkbox1">Google</label>
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="Friend" />
+        <label for="checkbox2">A friend</label>
+        <input type="checkbox" id="checkbox3" name="checkbox3" value="Other" />
+        <label for="checkbox3">Other</label>
+      </form>
+    </content>
 
-		</form>
-
-	</content>
-
-
-	<script src="about.js"></script>
-
-</body>
+    <script src="about.js"></script>
+  </body>
 </html>
